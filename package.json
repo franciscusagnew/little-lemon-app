@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint src",
     "lint-staged": "lint-staged",
-    "prepare": "lefthook install"
+    "prepare": "lefthook install",
+    "commitlint": "commitlint"
   },
   "dependencies": {
     "next": "14.2.6",
@@ -16,6 +17,8 @@
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.4.0",
+    "@commitlint/config-conventional": "^19.2.2",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
