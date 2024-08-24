@@ -34,7 +34,7 @@
     "typescript": "^5"
   },
   "lint-staged": {
-    "*.{js, jsx, tsx}": [
+    "*.{js,jsx,tsx}": [
       "npx prettier --write",
       "npx eslint --fix"
     ]

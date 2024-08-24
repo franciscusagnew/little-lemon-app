@@ -12,7 +12,7 @@ export const NavBar = () => {
             viewBox='0 0 200 54.05'
             fill='none'
             xmlns='http://www.w3.org/2000/svg'
-            xmlns:Xlink='http://www.w3.org/1999/xlink'
+            xmlnsXlink='http://www.w3.org/1999/xlink'
           >
             <rect width='199.5' height='54.05' fill='url(#pattern0)' />
             <defs>
