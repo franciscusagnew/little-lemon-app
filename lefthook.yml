@@ -36,12 +36,5 @@
 pre-commit:
   parallel: true
   commands:
-    js:
-      glob: '*.js'
-      run: npx lint-staged
-    jsx:
-      glob: '*.jsx'
-      run: npx lint-staged
-    tsx:
-      glob: '*.tsx'
+    lint:
       run: npx lint-staged
