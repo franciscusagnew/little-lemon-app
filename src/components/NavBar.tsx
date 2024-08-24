@@ -2,7 +2,7 @@ export const NavBar = () => {
   return (
     <header className="text-gray-500" data-pg-collapsed>
       <nav className="container flex flex-wrap items-center mx-auto px-4 py-3">
-        <a href="#" className="font-bold hover:text-gray-400 mr-3 text-gray-800 text-xl"><svg width="200" height="54.05" viewBox="0 0 200 54.05" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:link="http://www.w3.org/1999/xlink">
+        <a href="#" className="font-bold hover:text-gray-400 mr-3 text-gray-800 text-xl"><svg width="200" height="54.05" viewBox="0 0 200 54.05" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
           <rect width="199.5" height="54.05" fill="url(#pattern0)" />
           <defs>
             <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
