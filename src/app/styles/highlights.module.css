@@ -1,0 +1,59 @@
+.highlight {}
+
+.highlight__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "highlight__header" "highlight__content";
+    gap: 32px;
+}
+
+.highlight__content {
+    grid-area: highlight__content;
+}
+
+.highlight__header {
+    grid-area: highlight__header;
+    display: grid;
+    grid-template-areas: "highlight__title highlight__button";
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+.highlight__title {
+    grid-area: highlight__title;
+    font-size: 40pt;
+}
+
+.highlight__button {
+    grid-area: highlight__button;
+    font-size: inherit;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+    justify-self: right;
+}
+
+@media (max-width: 768px) {
+    .highlight__button {
+        justify-self: end;
+        font-size: 90%;
+    }
+}
+
+@media (max-width: 548px) {
+    .highlight__button {
+        font-size: 16pt;
+        margin-top: 16px;
+        justify-self: center;
+    }
+
+    .highlight__header {
+        display: grid;
+        grid-template-areas: "highlight__title" "highlight__button";
+        align-items: center;
+    }
+
+    .highlight__title {
+        text-align: center;
+        font-size: 32pt;
+    }
+}

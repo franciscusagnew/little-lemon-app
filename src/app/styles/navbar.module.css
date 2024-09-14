@@ -1,0 +1,47 @@
+.link {
+    color: #333333;
+}
+
+.link:hover {
+    color: #495E57;
+    font-weight: 800;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: ;
+}
+
+.nav_logo {
+    grid-area: nav_logo;
+    /* width: 50px; */
+}
+
+.toggle {
+    grid-area: toggle;
+}
+
+.cart__item {
+    grid-area: cart__item;
+    justify-self: right;
+}
+
+.link:active {
+    background-color: ;
+}
+
+@media (max-width: 348px) {
+    .header {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "nav_logo nav_logo toggle";
+    }
+
+    .nav_logo {
+        grid-area: nav_logo;
+    }
+
+    .toggle {
+        grid-area: toggle;
+    }
+}

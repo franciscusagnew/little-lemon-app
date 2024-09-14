@@ -1,14 +1,20 @@
-import Link from 'next/link'
+import type { Metadata } from 'next'
+import Hero from './components/Hero'
+import Highlights from './components/Highlights'
+import Testimonials from './components/Testimonials'
+import About from './components/About'
+
+export const metadata: Metadata = {
+  title: 'Home | Little Lemon Restaurant',
+}
 
 export default function Home() {
   return (
-    <main className='flex min-h-screen flex-col items-center justify-between p-24'>
-      <Link href='/'>Home</Link>
-      <Link href='/about'>About</Link>
-      <Link href='/menu'>Menu</Link>
-      <Link href='/order'>Order Online</Link>
-      <Link href='/reservations'>Reservations</Link>
-      <Link href='/login'>Login</Link>
-    </main>
+    <>
+      <Hero />
+      <Highlights />
+      <Testimonials />
+      <About />
+    </>
   )
 }

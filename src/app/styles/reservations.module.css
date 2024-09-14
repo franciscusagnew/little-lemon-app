@@ -1,0 +1,230 @@
+.reservations_form {
+    display: grid;
+    grid-auto-columns: 1fr 1fr;
+    grid-template-areas:
+        "form_pagination form_pagination"
+        "firstName lastName"
+        "phone date"
+        "time occasion"
+        "guestNum notes"
+        "form_footer form_footer";
+    gap: 32px;
+}
+
+.reservations__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "reservations__header" "reservations__content";
+    justify-items: center;
+    gap: 32px;
+}
+
+.reservations__content {
+    grid-area: reservations__content;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 2rem 0;
+}
+
+.reservations__header {
+    grid-area: reservations__header;
+}
+
+.reservations__title {
+    grid-area: reservations__title;
+    font-size: 40pt;
+}
+
+.reservations__formm button {
+    font-size: inherit;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+    width: fit-content;
+}
+
+.reservations__previousButton {
+    /* grid-area: previousButton; */
+}
+
+.reservations__resetButton {
+    /* grid-area: resetButton; */
+}
+
+.reservations__submitButton {
+    /* grid-area: submitButton; */
+}
+
+.reservations__submitButton:disabled:hover,
+.reservations__submitButton:disabled {
+    color: black;
+    background-color: grey;
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.form_pagination {
+    grid-area: form_pagination;
+    display: flex;
+    justify-content: center;
+}
+
+.firstName {
+    grid-area: firstName;
+}
+
+.lastName {
+    grid-area: lastName;
+}
+
+.phone {
+    grid-area: phone;
+}
+
+.date {
+    grid-area: date;
+}
+
+.time {
+    grid-area: time;
+}
+
+.occasion {
+    grid-area: occasion;
+}
+
+.guestNum {
+    grid-area: guestNum;
+}
+
+.notes {
+    grid-area: notes;
+}
+
+.form_footer {
+    grid-area: form_footer;
+    display: grid;
+    grid-template-areas: "form__left_button form__right_button";
+    justify-content: space-around;
+}
+
+.form__left_button {
+    grid-area: form__left_button;
+    font-size: inherit;
+}
+
+.form__right_button {
+    grid-area: form__right_button;
+    font-size: inherit;
+}
+
+.signature {
+    font-family: cursive;
+}
+
+@media (max-width: 768px) {
+    .reservations__button {
+        justify-self: end;
+        font-size: 90%;
+    }
+
+    .reservations__2btn_footer {
+        display: grid;
+        grid-template-areas: "1fr 1fr";
+        gap: 32px;
+        margin: 32px 0 32px;
+    }
+
+    .reservations__3btn_footer {
+        display: grid;
+        grid-template-areas: "1fr 1fr 1fr";
+        gap: 32px;
+        margin: 32px 0 32px;
+    }
+
+    .reservations_form {
+        display: grid;
+        grid-auto-columns: 1fr 1fr;
+        grid-template-areas:
+            "form_pagination form_pagination"
+            "firstName lastName"
+            "phone date"
+            "time occasion"
+            "guestNum notes"
+            "form_footer form_footer";
+        gap: 32px;
+    }
+
+    .form_footer {
+        grid-area: form_footer;
+        display: grid;
+        grid-template-areas:
+            "form__left_button form__right_button";
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 548px) {
+    .reservations__button {
+        font-size: 16pt;
+        margin-top: 16px;
+        justify-self: center;
+    }
+
+    .reservations__header {
+        display: grid;
+        grid-template-areas: "reservations__title" "reservations__button";
+        align-items: center;
+    }
+
+    .reservations__title {
+        text-align: center;
+        font-size: 32pt;
+    }
+
+    .reservations__2btn_footer {
+        display: grid;
+        grid-template-areas: "1fr" "1fr";
+        gap: 32px;
+        margin: 32px 0 32px;
+    }
+
+    .reservations__3btn_footer {
+        display: grid;
+        grid-template-areas: "1fr" "1fr" "1fr";
+        gap: 32px;
+        margin: 32px 0 32px;
+    }
+
+    .reservations_form {
+        display: grid;
+        grid-template-areas:
+            "form_pagination"
+            "firstName"
+            "lastName"
+            "phone"
+            "date"
+            "time"
+            "occasion"
+            "guestNum"
+            "notes"
+            "form_footer";
+        gap: 32px;
+    }
+
+    .form_footer {
+        grid-area: form_footer;
+        display: grid;
+        justify-content: center;
+        grid-template-areas:
+            "form__left_button"
+            "form__right_button";
+    }
+}
+
+@media (max-width: 348px) {
+    .reservations__title {
+        text-align: center;
+        font-size: 26pt;
+    }
+}

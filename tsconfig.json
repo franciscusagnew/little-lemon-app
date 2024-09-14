@@ -8,6 +8,7 @@
     "esModuleInterop": true,
     "module": "esnext",
     "moduleResolution": "bundler",
+    "baseUrl": "./",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
@@ -18,9 +19,46 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@/components/*": ["components/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "app/pages/about/page.js",
+    "src/_pages/index.jssge.js",
+    "src/app/about/index.jsx",
+    "src/pages/index.js",
+    "src/app/components/Testimonials.tsx",
+    "src/app/components/IconRightDoubleQuote.tsx",
+    "src/app/components/ReservationsStep1.jsx",
+    "src/app/components/ReservationsStep2.jsx",
+    "src/app/reservations/layout.tsx",
+    "src/app/reservations/form/page.jsx",
+    "src/app/reservations/form/page_orig.tsx",
+    "src/app/reservations/step2/page.jsx",
+    "src/app/components/Reservations.jsx",
+    "src/app/pages/api/reservations.js",
+    "src/components/ReservationsStep1.jsx",
+    "src/components/ReservationsStep1.js",
+    "src/components/Confirmation.jsx",
+    "src/components/Final.jsx",
+    "src/app/reservations/page.tsx",
+    "src/app/pages/api/fetch.tsx",
+    "src/app/pages/api/data.js",
+    "src/app/_api/route.js",
+    "src/components/Providers.jsx",
+    "src/components/TodoList.jsx",
+    "src/components/TodoListItem.jsx",
+    "src/components/Todo/TodoFooter.jsx",
+    "src/_pages/_app.jssdo/TodoHeader.jsx",
+    "src/app/todoapp/page.jsx",
+    "src/pages/_app.js",
+    "src/components/Posts.jsx",
+    "src/components/BookingForm.jsx"
+  ],
   "exclude": ["node_modules"]
 }

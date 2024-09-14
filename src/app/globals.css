@@ -2,32 +2,65 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+:root {}
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    font-size: 16pt;
+}
+
+.active {
+    color: #495E57;
+    font-weight: 700;
+}
+
+.react-multiple-carousel__arrow--left {
+    left: -6px !important;
+    border: 1px solid #b6b6b6 !important;
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    border-bottom-left-radius: 0px !important;
+}
+
+.react-multiple-carousel__arrow--right {
+    right: -6px !important;
+    border: 1px solid #b6b6b6 !important;
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    border-bottom-left-radius: 10px !important;
+}
+
+.react-multiple-carousel__arrow {
+    background-color: #fff !important;
+    min-width: 36px !important;
+    min-height: 40px !important;
+    opacity: 0.5 !important;
+}
+
+.react-multiple-carousel__arrow::before {
+    font-size: 32px !important;
+    color: #7f7f7f !important;
+    font-weight: bolder;
+    display: block !important;
+}
+
+.custom-dot-list-style {
+    color: yellow;
+}
+
+.carousel-item-padding-40-px {
+    padding: 032px;
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+    .text-balance {
+        text-wrap: balance;
+    }
+}
+
+@media (max-width: 548px) {
+    .carousel-item-padding-40-px {
+        padding: 0 0;
+    }
 }
